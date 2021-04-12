@@ -206,7 +206,7 @@ int main() {
 	if (pthread_create(&thrMovimentos[0], NULL, esq_dir, NULL))
 		fprintf(stderr, "Erro na criação da thread 1. \n");
     
-    if (pthread_create(&thrMovimentos[1], NULL, dir_esq, NULL))
+	if (pthread_create(&thrMovimentos[1], NULL, dir_esq, NULL))
 		fprintf(stderr, "Erro na criação da thread 2. \n");
 	
 	if (pthread_create(&thrMovimentos[2], NULL, cima_baixo, NULL))
