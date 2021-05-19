@@ -105,7 +105,7 @@ void atualizeFrame(int cod, int id){
 		
 	//Impressão da planta próximo à sala
 	//Desculpe o jeito que mantive as linhas de código abaixo
-	//É o melhor que encontrei e que me ajuda a visualizar a impressão.
+	//É o melhor que encontrei e que me ajuda a visualizar a impressão pelo meu editor de texto.
 	printf("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n");
 	printf("█   ▄▄▄▄▄▄▄▄▄▄▄     █\n");
 	printf("█   █ Jujubas ░     █    "); imprimaNumeroJogadores(0, nJogadores, jogadorForaDaSala); 				printf("          █\n");
