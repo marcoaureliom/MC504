@@ -6,6 +6,7 @@
 #include<pthread.h>
 #include<semaphore.h>
 
+//Define a quantidade de pthreads criadas
 #define nJogadores 5
 
 //Principais variáveis
@@ -108,18 +109,18 @@ void atualizeFrame(int cod, int id){
 	//É o melhor que encontrei e que me ajuda a visualizar a impressão pelo meu editor de texto.
 	printf("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n");
 	printf("█   ▄▄▄▄▄▄▄▄▄▄▄     █\n");
-	printf("█   █ Jujubas ░     █    "); imprimaNumeroJogadores(0, nJogadores, jogadorForaDaSala); 		    printf("          █\n");
+	printf("█   █ Jujubas ░     █    "); imprimaNumeroJogadores(0, nJogadores, jogadorForaDaSala); 				printf("          █\n");
 	printf("█   ░   ~%d~   █     █    ", jujubas); imprimaMaozinhasJogadores(0, nJogadores, jogadorForaDaSala); printf("          █\n");
-	printf("█   █▄▄▄▄▄▄▄▄▄█     █    "); imprimaPesJogadores(0, nJogadores, jogadorForaDaSala); 		    printf("          █\n");
+	printf("█   █▄▄▄▄▄▄▄▄▄█     █    "); imprimaPesJogadores(0, nJogadores, jogadorForaDaSala); 				printf("          █\n");
 	
-	printf("█ "); imprimaNumeroJogadores(0, 3, jogadorNaSala);    printf("      █                                  █\n");
+	printf("█ "); imprimaNumeroJogadores(0, 3, jogadorNaSala); 	  printf("      █                                  █\n");
 	printf("█ "); imprimaMaozinhasJogadores(0, 3, jogadorNaSala); printf("      █                   █              █\n");
-	printf("█ "); imprimaPesJogadores(0, 3, jogadorNaSala);       printf("      █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█              █\n");
+	printf("█ "); imprimaPesJogadores(0, 3, jogadorNaSala); 	  printf("      █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█              █\n");
 	
 	printf("█                      █    "); 											  imprimaNumeroJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); 		  printf("       █\n");
-	printf("█ ");imprimaNumeroJogadores(3, 5, jogadorNaSala);   printf("             ░    "); imprimaMaozinhasJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); printf("       █\n");
+	printf("█ ");imprimaNumeroJogadores(3, 5, jogadorNaSala);	printf("             ░    "); imprimaMaozinhasJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); printf("       █\n");
 	printf("█ ");imprimaMaozinhasJogadores(3, 5, jogadorNaSala);printf("             ░    "); imprimaPesJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); 	  printf("       █\n");
-	printf("█ ");imprimaPesJogadores(3, 5, jogadorNaSala);      printf("             ░                               █\n");
+	printf("█ ");imprimaPesJogadores(3, 5, jogadorNaSala);  	printf("             ░                               █\n");
 	
 	printf("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n\n\n\n\n\n");
 	
