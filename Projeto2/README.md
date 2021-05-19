@@ -40,5 +40,5 @@ Ou seja: neste jogo, o Impostor deve realizar suas sabotagens nas diversas salas
 * Também considero para a animação que o objetivo do Impostor é comer as jujubas que foram guardadas numa sala. Claro, são jujubas espaciais.
 * E também considero que o impostor sempre tranca a porta ao entrar numa sala sozinho.
 
-Neste código em C, foram usadas as bibliotecas `<pthread.h>` e `<semaphore.h>`.
+Neste código em C, foram usadas as bibliotecas `pthread.h` e `semaphore.h`.
 
