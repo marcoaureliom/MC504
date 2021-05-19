@@ -46,4 +46,6 @@ Neste `código em C`, foram usadas as bibliotecas `pthread.h` e `semaphore.h`. T
 
 Na animação, precisei adicionar um segundo semáforo para acesso à função que atualiza e imprime a planta da sala com a posição/localização de cada jogador/escritor/leitor, para assim evitar que duas threads a acessasse ao mesmo tempo.
 
-Também optei por usar alguns comandos `sleep()`, para conseguir alcançar um estado que ilustrasse melhor o momento em que o escritor aguarda leitores saírem, e outro momento onde leitores aguardam o escritor editar o dado.
+Também optei por usar alguns comandos `sleep()`, para conseguir alcançar um estado que ilustrasse melhor o momento em que o escritor aguarda leitores saírem, e outro momento onde leitores aguardam o escritor editar o dado. 
+
+* Repare que o Impostor é o `jogador 1`. Não optei por deixar claro na animação porque justamente revelaria o segredo.
