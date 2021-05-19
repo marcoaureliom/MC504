@@ -1,6 +1,8 @@
 # Readers-writers problem
 ## Animação Among Us - Jujubas
 
+![image](https://user-images.githubusercontent.com/6686318/118745234-21331600-b82c-11eb-8b36-594a074fdee3.png)
+
 ## Descrição do Problema dos Leitores/Escritores
 
 Imagine que você tenha um problema onde em um sistema uma estrutura de dados pode ser acessada simultaneamente para realizar a leitura, porém você deve impedir que essa leitura aconteça simultaneamente a uma edição de um dado, e assim evitar que haja uma leitura inconsistente ou inválida. 
