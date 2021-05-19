@@ -44,3 +44,6 @@ Ou seja: neste jogo, o Impostor deve realizar suas sabotagens nas diversas salas
 
 Neste `código em C`, foram usadas as bibliotecas `pthread.h` e `semaphore.h`. Também, foram criadas 5 pthreads, onde 1 representa o Impostor/escritor e as outras representam os demas  jogadores/leitores.
 
+Na animação, precisei adicionar um segundo semáforo para acesso à função que atualiza e imprime a planta da sala com a posição/localização de cada jogador/escritor/leitor, para assim evitar que duas threads a acessasse ao mesmo tempo.
+
+Também optei por usar alguns comandos `sleep()`, para conseguir alcançar um estado que ilustrasse melhor o momento em que o escritor aguarda leitores saírem, e outro momento onde leitores aguardam o escritor editar o dado.
