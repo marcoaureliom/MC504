@@ -10,7 +10,7 @@ Podem ocorrer várias leituras simultaneamente na então chamada seção crític
 * Qualquer número de leitores pode estar na seção crítica simultaneamente.
 * Os escritores devem ter acesso exclusivo à seção crítica.
 
-Este é o chamado “Problema dos Leitores/Escritores”.
+Este é o chamado “Problema dos Leitores/Escritores”. Onde, enquanto houver leitores, quem pretende escrever deve aguardar; e quem deseja ler, pode ler se ninguém estiver escrevendo, caso contrário deve aguardar.
 
 
 ### Usando semáforos e mutex para o Problema dos Leitores/Escritores 
