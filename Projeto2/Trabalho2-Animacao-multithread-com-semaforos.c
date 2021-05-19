@@ -1,5 +1,5 @@
 //Marco Aurélio de Oliveira Martins.
-//Problema dos Leitores/Escritores - Animação AmoungUs
+//Problema dos Leitores/Escritores - Animação Among Us
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -73,8 +73,8 @@ void atualizeFrame(int cod, int id){
 	//Início da região crítica
 	
 	//Imprima o título da animação
-	printf("▄▀█ █▀▄▀█ █▀█ █░█ █▄░█ █▀▀   █░█ █▀   ▄▄   ░░█ █░█ ░░█ █░█ █▄▄ ▄▀█ █▀\n");
-	printf("█▀█ █░▀░█ █▄█ █▄█ █░▀█ █▄█   █▄█ ▄█   ░░   █▄█ █▄█ █▄█ █▄█ █▄█ █▀█ ▄█\n\n");
+	printf("▄▀█ █▀▄▀█ █▀█ █▄░█ █▀▀   █░█ █▀   ▄▄   ░░█ █░█ ░░█ █░█ █▄▄ ▄▀█ █▀\n");
+	printf("█▀█ █░▀░█ █▄█ █░▀█ █▄█   █▄█ ▄█   ░░   █▄█ █▄█ █▄█ █▄█ █▄█ █▀█ ▄█\n\n");
 		
 	if(cod==0){
 		//Jogador está próximo da sala
@@ -108,18 +108,18 @@ void atualizeFrame(int cod, int id){
 	//É o melhor que encontrei e que me ajuda a visualizar a impressão pelo meu editor de texto.
 	printf("▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄\n");
 	printf("█   ▄▄▄▄▄▄▄▄▄▄▄     █\n");
-	printf("█   █ Jujubas ░     █    "); imprimaNumeroJogadores(0, nJogadores, jogadorForaDaSala); 				printf("          █\n");
+	printf("█   █ Jujubas ░     █    "); imprimaNumeroJogadores(0, nJogadores, jogadorForaDaSala); 		    printf("          █\n");
 	printf("█   ░   ~%d~   █     █    ", jujubas); imprimaMaozinhasJogadores(0, nJogadores, jogadorForaDaSala); printf("          █\n");
-	printf("█   █▄▄▄▄▄▄▄▄▄█     █    "); imprimaPesJogadores(0, nJogadores, jogadorForaDaSala); 				printf("          █\n");
+	printf("█   █▄▄▄▄▄▄▄▄▄█     █    "); imprimaPesJogadores(0, nJogadores, jogadorForaDaSala); 		    printf("          █\n");
 	
-	printf("█ "); imprimaNumeroJogadores(0, 3, jogadorNaSala); 	  printf("      █                                  █\n");
+	printf("█ "); imprimaNumeroJogadores(0, 3, jogadorNaSala);    printf("      █                                  █\n");
 	printf("█ "); imprimaMaozinhasJogadores(0, 3, jogadorNaSala); printf("      █                   █              █\n");
-	printf("█ "); imprimaPesJogadores(0, 3, jogadorNaSala); 	  printf("      █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█              █\n");
+	printf("█ "); imprimaPesJogadores(0, 3, jogadorNaSala);       printf("      █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█              █\n");
 	
 	printf("█                      █    "); 											  imprimaNumeroJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); 		  printf("       █\n");
-	printf("█ ");imprimaNumeroJogadores(3, 5, jogadorNaSala);	printf("             ░    "); imprimaMaozinhasJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); printf("       █\n");
+	printf("█ ");imprimaNumeroJogadores(3, 5, jogadorNaSala);   printf("             ░    "); imprimaMaozinhasJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); printf("       █\n");
 	printf("█ ");imprimaMaozinhasJogadores(3, 5, jogadorNaSala);printf("             ░    "); imprimaPesJogadores(0, nJogadores, jogadorEsperandoNoCorredorParaEntrar); 	  printf("       █\n");
-	printf("█ ");imprimaPesJogadores(3, 5, jogadorNaSala);  	printf("             ░                               █\n");
+	printf("█ ");imprimaPesJogadores(3, 5, jogadorNaSala);      printf("             ░                               █\n");
 	
 	printf("█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█\n\n\n\n\n\n");
 	
@@ -141,7 +141,7 @@ void *leitor(void *idP){
 	//(isso ajuda a criar ordens de threads que ilustrem melhor o problema escritores/leitores)
 	sleep(rand()%1);
 
-	//Para parecer algo mais natural estilo amoung us, faço com que a thread entre duas vezes na região crítica,
+	//Para parecer algo mais natural estilo Among Us, faço com que a thread entre duas vezes na região crítica,
 	//cada uma das vezes após dois segundos.
 	for(i=0; i<2; i++, sleep(2)){
 	
@@ -184,7 +184,7 @@ void *escritor(void *idP){
 	int id, i;
 	id = (int) idP;
 	
-	//Para parecer algo mais natural estilo amoung us, faço com que a thread entre duas vezes na região crítica,
+	//Para parecer algo mais natural estilo Among Us, faço com que a thread entre duas vezes na região crítica,
 	//cada uma das vezes após dois segundos.
 	for(i=0; i<2; i++, sleep(2)){
 		
@@ -199,6 +199,7 @@ void *escritor(void *idP){
 		
 		jujubas--;
 		//printf("Jogador número %d tranca a sala e, sozinho, come uma jujuba do pote. Restam %d.\n\n\n\n", id+1, jujubas);
+		sleep(1);
 		
 		//Jogador sai da sala
 		atualizeFrame(2, id);
