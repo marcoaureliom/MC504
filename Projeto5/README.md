@@ -4,7 +4,7 @@
 
 (Adaptado de: https://www.ic.unicamp.br/~islene/1s2017-mc504/proj2/qemu.html)
 
-1. Obtenha a versão 4.11.3 do kernel e descompacte o arquivo:
+1. Obtenha a versão `4.11.3` do kernel e descompacte o arquivo:
 ```
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.3.tar.xz
 tar xJvf linux-4.11.3.tar.xz
