@@ -37,13 +37,13 @@ qemu-system-i386 -hda ArchLinux_mc504.cow -kernel linux-4.11.3/arch/i386/boot/bz
 3. Quando o sistema carregar, faça login com "root", sem senha;
 4. Dentro do QEMU, altere o mapa do teclado com:
 ```
-$ loadkeys /usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
+loadkeys /usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
 ```
 5. Para finalmente testar as syscalls criadas, execute:
 ```
-$ cat /dev/hdb > minhaChamadaSys.c
-$ gcc minhaChamadaSys.c -o m
-$ ./m
+cat /dev/hdb > minhaChamadaSys.c
+gcc minhaChamadaSys.c -o m
+./m
 ```
 6. Realize os testes:
 
@@ -51,5 +51,5 @@ $ ./m
 
 7. Para sair sem corromper a imagem:
 ```
-$ poweroff
+poweroff
 ``` 
