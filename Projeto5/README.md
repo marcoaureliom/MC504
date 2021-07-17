@@ -47,7 +47,7 @@ gcc minhaChamadaSys.c -o m
 ```
 6. Realize os testes:
 
-![image](https://user-images.githubusercontent.com/6686318/126049387-715ffc68-3137-4e96-8212-0c0a016a63ba.png)
+![image](https://user-images.githubusercontent.com/6686318/126051364-4b7ad02b-7d0c-4c1a-ad44-c3a34ecbdfcd.png)
 
 7. Para sair sem corromper a imagem:
 ```
