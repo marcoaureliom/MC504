@@ -46,7 +46,9 @@ $ gcc minhaChamadaSys.c -o m
 $ ./m
 ```
 6. Realize os testes:
+
 ![image](https://user-images.githubusercontent.com/6686318/126049387-715ffc68-3137-4e96-8212-0c0a016a63ba.png)
+
 7. Para sair sem corromper a imagem:
 ```
 $ poweroff
