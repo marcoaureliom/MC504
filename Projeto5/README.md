@@ -53,5 +53,3 @@ gcc minhaChamadaSys.c -o m
 ```
 poweroff
 ``` 
-### Vídeo (gif) 
-![image](t5.gif)
