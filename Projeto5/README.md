@@ -6,8 +6,8 @@
 
 1. Obtenha a versão 4.11.3 do kernel e descompacte o arquivo:
 ```
-$ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.3.tar.xz
-$ tar xJvf linux-4.11.3.tar.xz
+wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.3.tar.xz
+tar xJvf linux-4.11.3.tar.xz
 ```
 2. No mesmo diretório, adicione:
 * a imagem [ArchLinux_mc504.cow](https://www.ic.unicamp.br/~islene/1s2017-mc504/proj2/ArchLinux_mc504.cow), 
@@ -15,13 +15,13 @@ $ tar xJvf linux-4.11.3.tar.xz
 * e [minhaChamadaSys.c](minhaChamadaSys.c).
 3. Instale o arquivo de configuração:
 ```
-$ cd linux-4.11.3
-$ cp ../config-4.11.3 .config
+cd linux-4.11.3
+cp ../config-4.11.3 .config
 ```
-4. Adicione o arquivo [user.c](user.c) em ´linux-4.11.3/kernel´;
-5. Adicione o arquivo [user.h](user.h) em ´linux-4.11.3/include/linux/sched´;
-6. Adicione o arquivo [getuserweight.c](getuserweight.c), [setuserweight.c](setuserweight.c) e [Makefile](Makefile) em ´linux-4.11.3/arch/x86/kernel´;
-7. Altere o arquivo ´syscall_32.tbl´ em ´linux-4.11.3/arch/x86/syscalls/syscall_32.tbl´ adicionando as syscalls criadas:
+4. Adicione o arquivo [user.c](user.c) em `linux-4.11.3/kernel`;
+5. Adicione o arquivo [user.h](user.h) em `linux-4.11.3/include/linux/sched`;
+6. Adicione o arquivo [getuserweight.c](getuserweight.c), [setuserweight.c](setuserweight.c) e [Makefile](Makefile) em `linux-4.11.3/arch/x86/kernel`;
+7. Altere o arquivo [syscall_32.tbl](syscall_32.tbl) em `linux-4.11.3/arch/x86/syscalls/syscall_32.tbl` adicionando as syscalls criadas:
 
 
 8. Compile o kernel:
