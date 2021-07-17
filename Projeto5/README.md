@@ -20,7 +20,7 @@ cp ../config-4.11.3 .config
 ```
 4. Adicione o arquivo [user.c](user.c) em `linux-4.11.3/kernel`;
 5. Adicione o arquivo [user.h](user.h) em `linux-4.11.3/include/linux/sched`;
-6. Adicione o arquivo [getuserweight.c](getuserweight.c), [setuserweight.c](setuserweight.c) e [Makefile](Makefile) em `linux-4.11.3/arch/x86/kernel`;
+6. Adicione os arquivos [getuserweight.c](getuserweight.c), [setuserweight.c](setuserweight.c) e [Makefile](Makefile) em `linux-4.11.3/arch/x86/kernel`;
 7. Altere o arquivo [syscall_32.tbl](syscall_32.tbl) em `linux-4.11.3/arch/x86/syscalls/syscall_32.tbl` adicionando as syscalls criadas:
 ![image](https://user-images.githubusercontent.com/6686318/126048425-fcba765d-c871-421d-abdf-7c812c65d45f.png)
 8. Altere o arquivo [minhaChamadaSys.c](minhaChamadaSys.c) já adicionado corrigindo os códigos das syscalls criadas.
