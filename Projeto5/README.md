@@ -1,6 +1,6 @@
 # Trabalho 5 de MC504
 
-# Preparação do ambiente
+## Preparação do ambiente
 
 (Adaptado de: https://www.ic.unicamp.br/~islene/1s2017-mc504/proj2/qemu.html)
 
@@ -23,27 +23,29 @@ cp ../config-4.11.3 .config
 6. Adicione o arquivo [getuserweight.c](getuserweight.c), [setuserweight.c](setuserweight.c) e [Makefile](Makefile) em `linux-4.11.3/arch/x86/kernel`;
 7. Altere o arquivo [syscall_32.tbl](syscall_32.tbl) em `linux-4.11.3/arch/x86/syscalls/syscall_32.tbl` adicionando as syscalls criadas:
 ![image](https://user-images.githubusercontent.com/6686318/126048425-fcba765d-c871-421d-abdf-7c812c65d45f.png)
-8. Altere o arquivo [minhaChamadaSys.c](minhaChamadaSys.c) já adicionado corrigindo os códigos das syscalls criadas;
-9. Compile o kernel:
+8. Altere o arquivo [minhaChamadaSys.c](minhaChamadaSys.c) já adicionado corrigindo os códigos das syscalls criadas.
+
+## Teste das syscalls
+1. Compile o kernel:
 ```
 make -j$(nproc)
 ```
-10. Teste o kernel com a imagem utilizando o QEMU:
+2. Teste o kernel com a imagem utilizando o QEMU:
 ```
 qemu-system-i386 -hda ArchLinux_mc504.cow -kernel linux-4.11.3/arch/i386/boot/bzImage -append "rw root=/dev/hda" -drive format=raw,file=minhaChamadaSys.c
 ```
-11. Quando o sistema carregar, faça login com "root", sem senha;
-12. Dentro do QEMU, altere o mapa do teclado com:
+3. Quando o sistema carregar, faça login com "root", sem senha;
+4. Dentro do QEMU, altere o mapa do teclado com:
 ```
 $ loadkeys /usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
 ```
-13. Para finalmente testar as syscalls criadas, execute:
+5. Para finalmente testar as syscalls criadas, execute:
 ```
 $ cat /dev/hdb > minhaChamadaSys.c
 $ gcc minhaChamadaSys.c -o m
 $ ./m
 ```
-14. Para sair sem corromper a imagem:
+6. Para sair sem corromper a imagem:
 ```
 $ poweroff
 ``` 
